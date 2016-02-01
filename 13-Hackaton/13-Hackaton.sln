@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13-Hackaton", "13-Hackaton\13-Hackaton.csproj", "{ACFD79C0-1D23-4E64-A27E-F9609BD45757}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpeechDictionary.Core", "SpeechDictionary\SpeechDictionary.Core.csproj", "{AF9BFD29-4C6F-4175-8880-13AD7C7DD9F1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ACFD79C0-1D23-4E64-A27E-F9609BD45757}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACFD79C0-1D23-4E64-A27E-F9609BD45757}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACFD79C0-1D23-4E64-A27E-F9609BD45757}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACFD79C0-1D23-4E64-A27E-F9609BD45757}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF9BFD29-4C6F-4175-8880-13AD7C7DD9F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF9BFD29-4C6F-4175-8880-13AD7C7DD9F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF9BFD29-4C6F-4175-8880-13AD7C7DD9F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF9BFD29-4C6F-4175-8880-13AD7C7DD9F1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

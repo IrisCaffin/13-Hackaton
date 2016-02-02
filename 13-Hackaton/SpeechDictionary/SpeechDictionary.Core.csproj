@@ -49,6 +49,7 @@
     <Compile Include="Domain\Definition.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\DictionaryService.cs" />
+    <Compile Include="Services\RandomWordService.cs" />
     <Compile Include="Services\SpeechService.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -18,7 +18,7 @@
                     <ColumnDefinition Width="40*"/>
                     <ColumnDefinition Width="361*"/>
                 </Grid.ColumnDefinitions>
-                <TextBox x:Name="findWordTextBox" HorizontalAlignment="Left" Height="23" Margin="10,14,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="317" TextChanged="findWordTextBox_TextChanged" Grid.Column="1" Grid.ColumnSpan="2"/>
+                <TextBox x:Name="findWordTextBox" HorizontalAlignment="Left" Height="23" Margin="10,14,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="317" Grid.Column="1" Grid.ColumnSpan="2"/>
                 <Button x:Name="findButton" Content="Find" HorizontalAlignment="Left" Margin="0,48,0,0" VerticalAlignment="Top" Width="100" Click="findButton_Click" Grid.Column="2" Height="30"/>
                 <Button x:Name="clearButton" Content="Clear" Grid.Column="2" HorizontalAlignment="Left" Margin="154,48,0,0" VerticalAlignment="Top" Width="100" Click="clearButton_Click" Height="30"/>
             </Grid>

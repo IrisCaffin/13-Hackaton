@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using SpeechDictionary.Core;
-using SpeechDictionary.Services;
+using SpeechDictionary.Core.Services;
 using System.Speech.Synthesis;
 
 namespace SpeechDictionary.Core.Services

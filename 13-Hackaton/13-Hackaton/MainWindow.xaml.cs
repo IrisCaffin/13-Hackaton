@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using SpeechDictionary.Core.Services;
+using SpeechDictionary.Domain;
 
 namespace _13_Hackaton
 {
@@ -26,34 +27,30 @@ namespace _13_Hackaton
             InitializeComponent();
         }
 
-        private void findWordTextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            // The user enters a word in the findWordTextBox
-        }
-
         private void findButton_Click(object sender, RoutedEventArgs e)
         {
             // The user click the findButton to generate a definition
-            Console.ReadLine();
+            string userWord = findWordTextBox.Text;
+
+            Definition definition = DictionaryService.GetDefinition(userWord);
+
+            definitionTextBlock.Text = definition.text + Environment.NewLine + Environment.NewLine + definition.attribution;
         }
 
-        private void definitionTextBlock
-        {
-            // The definition (a repition of the word (text) + one definition (attribution) gets displayed in the definitionTextBlock
-            DictionaryService.Definition(GetDefinition);
-        }
 
         private void randomWordButton_Click(object sender, RoutedEventArgs e)
         {
             // For educational purposes the user can click on the randomWordButton to learn more
-            // The results of the randomWordButton will be displayed in the definitionTextBlock
+            // The results of the randomWordButton will be displayed in the findWordTextBox and the user clicks FIND, etc.
+
         }
 
         private void talkButton_Click(object sender, RoutedEventArgs e)
         {
            // The user can click on the talkButton so that whatever is displayed in the definitionTextBlock is read out loud
            // Not sure if DictionaryService and RandomWordService need to be dealt with separately for display purposes
-            SpeechService.Speak("Hello");
+            SpeechService.Speak(findWordTextBox.Text);
+            SpeechService.Speak(definitionTextBlock.Text);
         }
 
         private void clearButton_Click(object sender, RoutedEventArgs e)
